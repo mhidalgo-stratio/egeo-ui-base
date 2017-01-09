@@ -9,7 +9,7 @@
 
   <groupId>com.stratio.ui-base</groupId>
   <artifactId>ui-base</artifactId>
-  <version>0.2.0-RC1</version>
+  <version>0.2.0-RC2-SNAPSHOT</version>
 
   <name>UI-Base</name>
 
