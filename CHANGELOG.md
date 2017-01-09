@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2.0 (upcoming)
+## 0.2.0 (January 09, 2017)
 
 * Add rgba for getColor function
 
