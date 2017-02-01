@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.3.0 (upcoming)
+## 0.3.0 (February 01, 2017)
 
 * Add Stratio Grid
 
