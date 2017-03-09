@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.1 (upcoming)
+## 1.1.1 (March 09, 2017)
 
 * Dummy change to publish a release artifact
 
