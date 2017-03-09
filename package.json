@@ -1,6 +1,6 @@
 {
   "name": "egeo-ui-base",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "Apache-2.0",
   "description": "UI-Base project with utilites",
   "scripts": {
