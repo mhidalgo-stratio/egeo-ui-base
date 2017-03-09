@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1 (upcoming)
+
+* Dummy change to publish a release artifact
+
 ## 1.1.0 (March 03, 2017)
 
 * Add the egeo-get-vmin function in the grid utils to get the minimum with of the viewport each Stratio application should support 
