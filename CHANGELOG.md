@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.4.1 (upcoming)
+## 1.4.1 (July 12, 2017)
 
 * Fix body_small rem value from 0.84 to 0.88
 
