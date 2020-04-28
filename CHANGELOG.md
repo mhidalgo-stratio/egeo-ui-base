@@ -3,6 +3,7 @@
 ## 2.0.0 (upcoming)
 
 * Update License
+* Separated egeo fonts into egeo-ui-base
 
 ## 1.4.1 (July 12, 2017)
 
