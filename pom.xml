@@ -10,7 +10,7 @@
 
    <groupId>com.stratio.egeo-ui-base</groupId>
    <artifactId>egeo-ui-base</artifactId>
-   <version>2.0.0-RC2-SNAPSHOT</version>
+   <version>2.0.0</version>
 
    <name>Egeo-UI-Base</name>
 
