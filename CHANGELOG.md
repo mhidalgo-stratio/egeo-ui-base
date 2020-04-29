@@ -4,7 +4,7 @@
 
 * Pending changelog
 
-## 2.0.0 (upcoming)
+## 2.0.0 (April 29, 2020)
 
 * Update License
 * Separated egeo fonts into egeo-ui-base
