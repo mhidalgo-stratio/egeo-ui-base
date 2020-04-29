@@ -1,11 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-   <modelVersion>4.0.0</modelVersion>
-   <parent>
-      <groupId>com.stratio</groupId>
-      <artifactId>parent</artifactId>
-      <version>0.10.0-SNAPSHOT</version>
-   </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.stratio</groupId>
+    <artifactId>parent</artifactId>
+    <version>0.11.0</version>
+  </parent>
 
    <groupId>com.stratio.egeo-ui-base</groupId>
    <artifactId>egeo-ui-base</artifactId>
@@ -13,11 +14,11 @@
 
    <name>Egeo-UI-Base</name>
 
-   <inceptionYear>2016</inceptionYear>
+   <inceptionYear>2020</inceptionYear>
 
    <properties>
-      <nodeVer>v6.9.2</nodeVer>
-      <npmVer>3.8.8</npmVer>
+      <nodeVer>v10.16.0</nodeVer>
+      <npmVer>6.5.0</npmVer>
       <nodeURL>http://tools.stratio.com/buildtools</nodeURL>
    </properties>
 
@@ -73,14 +74,13 @@
                   </configuration>
                </execution>
                <execution>
-                  <id>npm test</id>
+                  <id>build</id>
                   <goals>
                      <goal>npm</goal>
                   </goals>
-                  <phase>test</phase>
+                  <phase>compile</phase>
                   <configuration>
-                     <skipTests>${skipUTs}</skipTests>
-                     <arguments>run-script test</arguments>
+                     <arguments>run-script build</arguments>
                   </configuration>
                </execution>
                <execution>
@@ -95,20 +95,8 @@
                </execution>
             </executions>
          </plugin>
-         <plugin>
-            <groupId>com.mycila</groupId>
-            <artifactId>license-maven-plugin</artifactId>
-            <configuration>
-               <header>${license.header}</header>
-               <includes>
-                  <include>settings/**</include>
-                  <include>utils/**</include>
-               </includes>
-            </configuration>
-         </plugin>
       </plugins>
    </build>
-
    <profiles>
       <profile>
          <id>node</id>

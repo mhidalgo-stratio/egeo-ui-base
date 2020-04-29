@@ -1,38 +1,43 @@
 {
-   "name": "@stratio/egeo-ui-base",
-   "version": "1.3.0",
-   "license": "Apache-2.0",
-   "description": "UI-Base project with utilites",
-   "scripts": {
-      "clean:dist": "rimraf main.css",
-      "test": "npm run test:sass && npm run test:postcss && npm run clean:dist",
-      "test:sass": "node-sass --include-path scss index.scss main.css",
-      "test:postcss": "postcss --use autoprefixer *.css -d .",
-      "replace": "json -I -f package.json -e",
-      "sass-lint": "sass-lint -c .sass-lint.yml ./settings/*.scss ./utils/*.scss -v -q",
-      "commit": "git-cz"
-   },
-   "author": "Stratio",
-   "repository": {
-      "type": "git",
-      "url": "https://github.com/Stratio/egeo-ui-base"
-   },
-   "devDependencies": {
-      "autoprefixer": "6.7.2",
-      "commitizen": "2.9.6",
-      "cz-conventional-changelog": "2.0.0",
-      "json": "9.0.4",
-      "node-sass": "4.5.0",
-      "postcss-cli": "2.6.0",
-      "rimraf": "2.5.4",
-      "sass-lint": "1.10.2"
-   },
-   "keywords": [
-      "sass"
-   ],
-   "config": {
-      "commitizen": {
-         "path": "./node_modules/cz-conventional-changelog"
-      }
-   }
+  "name": "@stratio/egeo-ui-base",
+  "version": "",
+  "license": "Apache-2.0",
+  "description": "UI-Fonts library",
+  "sasslintConfig": ".sass-lint.yml",
+  "scripts": {
+    "replace": "json -I -f package.json -e",
+    "build": "npm run clean:dist && npm run build:sass && npm run build:postcss",
+    "build:sass": "npm run build:sass:nunito && npm run build:sass:fonticon",
+    "build:sass:nunito": "node-sass --include-path scss src/fonts/nunito-sans.scss nunito-sans.css",
+    "build:sass:fonticon": "node-sass --include-path scss src/fonts/stratio-fonticon.scss stratio-fonticon.css",
+    "build:postcss": "postcss *.css -d .",
+    "generate:sass": "scss-bundle -e ./src/constants/_index.scss -d constants.scss",
+    "clean:dist": "rimraf *.css *.css.map *.scss",
+    "commit": "git-cz"
+  },
+  "author": "Stratio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stratio/ui-fonts"
+  },
+  "devDependencies": {
+   "autoprefixer": "^9.7.6",
+    "clean-css": "4.2.3",
+    "commitizen": "2.9.6",
+    "cssnano": "4.1.10",
+    "cz-conventional-changelog": "3.1.0",
+    "json": "9.0.6",
+    "node-sass": "4.14.0",
+    "postcss-cli": "7.1.1",
+    "postcss-cssnext": "3.1.0",
+    "postcss-import": "12.0.1",
+    "rimraf": "3.0.2",
+    "sanitize.css": "11.0.0",
+    "scss-bundle": "3.1.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
