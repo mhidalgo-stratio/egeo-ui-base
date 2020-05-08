@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.0 (upcoming)
+
+* Pending changelog
+
 ## 2.1.0 (upcoming)
 
 * Updated stratio-fonticon to 1.36
