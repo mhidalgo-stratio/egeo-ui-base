@@ -72,7 +72,14 @@ i {
    -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-prometheus:before {
+
+.icon-cross-octagon:before {
+   content: "\ea0d";
+ }
+ .icon-event-hub:before {
+   content: "\ea0c";
+ }
+ .icon-prometheus:before {
    content: "\ea0b";
  }
  .icon-asset-ml-flow:before {
