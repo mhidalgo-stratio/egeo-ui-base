@@ -4,7 +4,7 @@
 
 * Pending changelog
 
-## 2.2.0 (upcoming)
+## 2.2.0 (May 27, 2020)
 
 * Updated stratio-fonticon to 1.37
 
