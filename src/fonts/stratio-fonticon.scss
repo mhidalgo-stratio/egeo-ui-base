@@ -71,8 +71,21 @@ i {
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
 }
-
-
+.icon-python:before {
+  content: "\ea0e";
+ }
+.icon-r:before {
+   content: "\ea0f";
+ }
+.icon-scala:before {
+   content: "\ea10";
+ }
+.icon-pyspark:before {
+   content: "\ea11";
+ }
+.icon-spark:before {
+   content: "\ea12";
+ }
 .icon-cross-octagon:before {
    content: "\ea0d";
  }
